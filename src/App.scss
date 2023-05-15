@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.table-head-cell {
+  padding: 0.5rem 1rem;
+  border-right: 1px solid gray;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.table-cell {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.table-head-container {
+  background-color: white;
+}
+
+.table-with-single-scroll-container {
+  .scroll-container {
+    overflow-x: scroll;
+    padding: 1rem;
+
+    // position: sticky;
+    // top: 0;
+    // overflow-y: scroll;
+    // max-height: 100vh;
+  }
+
+  .table-head {
+    display: flex;
+    justify-content: flex-start;
+    background: silver;
+    margin-bottom: 1rem;
+
+    // position: sticky;
+    // top: 0;
+  }
+
+  .table-row {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .table-group-header {
+    padding: 0.5rem 1rem;
+    background-color: lightblue;
+    margin: 1rem 0;
+
+    // position: sticky;
+    // left: 0;
+  }
+}
+
+.table-with-multiple-scroll-containers {
+  .scroll-container {
+    overflow-x: scroll;
+    padding: 1rem;
+    background-color: white;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // position: sticky;
+    // top: 0;
+    // overflow-y: scroll;
+    // max-height: 100vh;
+  }
+
+  .table-head {
+    display: flex;
+    justify-content: flex-start;
+    background: silver;
+    position: sticky;
+    top: 0;
+  }
+
+  .table-row {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .table-group-header-container {
+    background-color: white;
+
+    position: sticky;
+    top: 2.15rem;
+  }
+
+  .table-group-header {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    background-color: lightblue;
+  }
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.-top-1 {
+  top: -1rem;
+}
+
+.top-1 {
+  top: 1rem;
+}
